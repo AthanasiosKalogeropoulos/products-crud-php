@@ -575,8 +575,8 @@ $productsList = new Products("./products.xml");
             if (this.value.endsWith('kg')) {
                 this.value = this.value.slice(0, -2);
             }
-        }); 
-        
+        });
+
         // Remove ?success=1 from URL after showing message
         if (window.location.search.includes('success=1')) {
             history.replaceState(null, '', window.location.pathname);
