@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mywebsite>
+    <LAST_UPDATE>2022-07-18 10:52</LAST_UPDATE>
+    <PRODUCTS>
+        <PRODUCT>
+            <NAME>
+                <![CDATA[ROCKET COMPLETE SKATEBOARD RASTA FADE 8.0" Complete Skateboard από τη Rocket σε Μαύρο Rasta χρώμα]]>
+            </NAME>
+
+            <PRICE>
+                64.9
+            </PRICE>
+            <QUANTITY>3</QUANTITY>
+            <CATEGORY id="113000102">
+                BOARDS-&gt;Complete Skateboards
+            </CATEGORY>
+            <MANUFACTURER>
+                ROCKET
+            </MANUFACTURER>
+            <BARCODE>
+                <![CDATA[5056245544934]]>
+            </BARCODE>
+            <WEIGHT>
+                <![CDATA[6.1kg]]>
+            </WEIGHT>
+            <INSTOCK>Y</INSTOCK>
+            <AVAILABILITY>Άμεσα Διαθέσιμο</AVAILABILITY>
+        </PRODUCT>
+        <PRODUCT>
+            <NAME>
+                <![CDATA[TONY HAWK SS540 COMPLETE SKATE HIGHWAY MULTI 7.5" Tony Hawk Complete Skateboard σε χρώμα μαύρο]]>
+            </NAME>
+
+            <PRICE>
+                70
+            </PRICE>
+            <QUANTITY>3</QUANTITY>
+            <CATEGORY id="113000102">
+                BOARDS-&gt;Complete Skateboards
+            </CATEGORY>
+            <MANUFACTURER>
+                ROCKET
+            </MANUFACTURER>
+            <BARCODE>
+                <![CDATA[5056245544934]]>
+            </BARCODE>
+            <WEIGHT>
+                <![CDATA[7.1kg]]>
+            </WEIGHT>
+            <INSTOCK>Y</INSTOCK>
+            <AVAILABILITY>Άμεσα Διαθέσιμο</AVAILABILITY>
+        </PRODUCT>
+        <PRODUCT>
+            <NAME>Apple MacBook Air 13.6" IPS Retina Display (M4-10-Core/16GB/256GB SSD/8-Core GPU)
+                με Φορτιστή 30W Midnight (GR Keyboard)</NAME>
+            <PRICE>899,15</PRICE>
+            <QUANTITY>10</QUANTITY>
+            <CATEGORY>Laptops</CATEGORY>
+            <MANUFACTURER>Apple</MANUFACTURER>
+            <BARCODE>1234567890</BARCODE>
+            <WEIGHT>1,24 kg</WEIGHT>
+            <INSTOCK>Y</INSTOCK>
+            <AVAILABILITY>Άμεσα Διαθέσιμο</AVAILABILITY>
+        </PRODUCT>
+        <PRODUCT>
+            <NAME>New Balance Classics Classics Ανδρικά Sneakers Λευκά</NAME>
+            <PRICE>103.40</PRICE>
+            <QUANTITY>20</QUANTITY>
+            <CATEGORY>Sneakers</CATEGORY>
+            <MANUFACTURER>New Balance</MANUFACTURER>
+            <BARCODE>MR530SG</BARCODE>
+            <WEIGHT>1,24 kg</WEIGHT>
+            <INSTOCK>Y</INSTOCK>
+            <AVAILABILITY>Άμεσα Διαθέσιμο</AVAILABILITY>
+        </PRODUCT>
+        <PRODUCT>
+            <NAME>Gigabyte GeForce RTX 3050 8GB GDDR6 Windforce V2 OC Κάρτα Γραφικών</NAME>
+            <PRICE>245.24</PRICE>
+            <QUANTITY>15</QUANTITY>
+            <CATEGORY>Κάρτες γραφικών</CATEGORY>
+            <MANUFACTURER>Nvidia</MANUFACTURER>
+            <BARCODE>GV-N3050WF2OCV2-8GD</BARCODE>
+            <WEIGHT>5 kg</WEIGHT>
+            <INSTOCK>Y</INSTOCK>
+            <AVAILABILITY>Άμεσα Διαθέσιμο</AVAILABILITY>
+        </PRODUCT>
+    </PRODUCTS>
+</mywebsite>
