@@ -450,7 +450,10 @@ $productsList = new Products("./products.xml");
 
                         <div class="form-group full">
                             <label>Name <span class="required">*</span></label>
-                            <input type="text" name="name" value="<?= htmlspecialchars($form_data['name'] ?? '') ?>" placeholder="Product name">
+                            <input type="text" name="name"
+                                value="<?= htmlspecialchars($form_data['name'] ?? '') ?>"
+                                placeholder="Product name"
+                                style="<?= $error ? 'border-color: var(--danger); box-shadow: 0 0 0 3px rgba(220,38,38,0.1);' : '' ?>">
                         </div>
 
                         <div class="form-group">
