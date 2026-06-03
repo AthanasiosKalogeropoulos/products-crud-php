@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: products-crud-php
+    env: php
+    buildCommand: ""
+    startCommand: php -S 0.0.0.0:$PORT -t .
+    envVars:
+      - key: DB_HOST
+        fromDatabase:
+          name: products-db
+          property: host
+      - key: DB_NAME
+        fromDatabase:
+          name: products-db
+          property: database
+      - key: DB_USER
+        fromDatabase:
+          name: products-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: products-db
+          property: password
+      - key: DB_PORT
+        fromDatabase:
+          name: products-db
+          property: port
+
+databases:
+  - name: products-db
+    plan: free
