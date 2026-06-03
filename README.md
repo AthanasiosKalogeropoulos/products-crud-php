@@ -1,54 +1,41 @@
-# Products CRUD — PHP & XML
+# Products CRUD — PHP & PostgreSQL
 
-A simple PHP product management application built as part of a technical challenge. It reads product data from an XML file, displays it in a clean table, and allows users to add new products via a modal form.
+A product management web application with full CRUD functionality,
+built with OOP PHP, PDO, and PostgreSQL.
 
----
+## Live Demo
+🔗 [View Live App](#) ← θα βάλουμε το Railway URL μετά το deploy
 
 ## Features
-
-- **Product listing** — Reads and displays all products from `products.xml` in a responsive HTML table
-- **Add product** — Modal form for adding new products, integrated into the main page for a seamless UX
-- **Form validation** — Client-side (JS) and server-side (PHP) validation; the Name field is required
-- **Form persistence** — Field values are preserved if validation fails, so the user doesn't lose their input
-- **PRG pattern** — Post/Redirect/Get implemented to prevent duplicate submissions on page refresh
-- **Input UX** — Price field accepts only numbers and a decimal point; Weight field auto-appends "kg"
-- **Success/error feedback** — Contextual messages with auto-dismiss on success
-
----
+- Product listing with clean, responsive table
+- Add product via modal form
+- Edit product on dedicated page
+- Delete product with confirmation dialog
+- PRG pattern — prevents duplicate submissions on refresh
+- Server-side & client-side validation
+- Security — PDO prepared statements prevent SQL injection
 
 ## Tech Stack
-
-- PHP 8.x (OOP, SimpleXML)
+- PHP 8.x (OOP, PDO)
+- PostgreSQL
 - HTML5 / CSS3 / Vanilla JS
-- XML for data storage
 
----
+## Local Development
+Requires PHP 8.x and PostgreSQL
 
-## Project Structure
-
-```
-├── products.php       # Main page: product table + add product modal
-├── lib.php            # Products class with print and add_product methods
-├── products.xml       # XML data store
-└── README.md
-```
-
----
-
-## Design Decisions
-
-- The `add_product()` method lives inside the `Products` class in `lib.php`, as suggested in the brief
-- The form is integrated into `products.php` as a modal rather than a separate page — this keeps the user in context and avoids unnecessary navigation
-- Styling was kept clean and minimal to reflect professional UI standards, even though it was not explicitly required
-
----
-
-## How to Run
-
-Requires PHP 8.x CLI or any local web server (XAMPP, MAMP, etc.)
-
-```bash
-php -S localhost:8000
-```
-
-Then open `http://localhost:8000/products.php` in your browser.
+1. Clone the repo
+2. Create database: `CREATE DATABASE products_db;`
+3. Run the table migration:
+\```sql
+CREATE TABLE products (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL DEFAULT 0.00,
+    weight DECIMAL(10, 3) NOT NULL DEFAULT 0.000,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+\```
+4. Update `config/db.php` with your local credentials
+5. Run: `php -S localhost:8000`
+6. Open: `http://localhost:8000/products.php`
