@@ -388,3 +388,54 @@ tbody tr:hover td {
   border-radius: 20px;
   margin-left: 8px;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 12px;
+    margin: 20px auto;
+  }
+
+  .page-title {
+    font-size: 18px;
+  }
+
+  .topbar {
+    padding: 0 16px;
+  }
+
+  /* Κάνει τον πίνακα scrollable οριζόντια */
+  .table-card {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 500px;
+  }
+
+  th,
+  td {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .btn-small {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .modal {
+    margin: 0 16px;
+    padding: 24px;
+  }
+
+  .confirm-box {
+    margin: 0 16px;
+    padding: 24px;
+  }
+}
